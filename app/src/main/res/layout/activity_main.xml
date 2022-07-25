@@ -26,16 +26,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/button"
             app:backgroundTint="#010101"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.176" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
-    <CheckBox
-            android:text="By clicking submit you agree with our Terms and Conditions and Privacy Policy"
-            android:layout_width="289dp"
-            android:layout_height="47dp" android:id="@+id/checkBox"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" android:layout_marginTop="32dp"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.498"
+            android:onClick="submit"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonCity"
+            app:layout_constraintVertical_bias="0.192"/>
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +74,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/editTextTextPersonCity"
             app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
             android:layout_marginTop="20dp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.502"/>
@@ -101,7 +97,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonCity"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="36dp"
             app:layout_constraintHorizontal_bias="0.567"/>
+    <TextView
+            android:text=""
+            android:layout_width="203dp"
+            android:layout_height="22dp" android:id="@+id/sPassword"
+            app:layout_constraintTop_toBottomOf="@+id/sUsername" app:layout_constraintStart_toStartOf="@+id/sUsername"
+            app:layout_constraintEnd_toEndOf="@+id/sUsername" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text=""
+            android:layout_width="203dp"
+            android:layout_height="22dp" android:id="@+id/sCity"
+            app:layout_constraintStart_toStartOf="@+id/sPhone" app:layout_constraintEnd_toEndOf="@+id/sPhone"
+            app:layout_constraintTop_toBottomOf="@+id/sPhone" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text=""
+            android:layout_width="203dp"
+            android:layout_height="22dp" android:id="@+id/sEmail"
+            app:layout_constraintTop_toBottomOf="@+id/sPassword" app:layout_constraintEnd_toEndOf="@+id/sPassword"
+            app:layout_constraintStart_toStartOf="@+id/sPassword" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text=""
+            android:layout_width="203dp"
+            android:layout_height="22dp" android:id="@+id/sPhone"
+            app:layout_constraintTop_toBottomOf="@+id/sEmail" app:layout_constraintEnd_toEndOf="@+id/sEmail"
+            app:layout_constraintStart_toStartOf="@+id/sEmail" android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text=""
+            android:layout_width="203dp"
+            android:layout_height="22dp" android:id="@+id/sUsername"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.056"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
